@@ -63,7 +63,7 @@
     <!-- ==========Utility section========== -->
     <section class="utility">
 
-      <div class="waves">
+      <div class="waves-one">
         <div class="top-wave-img">
           <img src="images/bg-section-top-mobile-1.svg" alt="" aria-hidden="true">
         </div>
@@ -93,38 +93,59 @@
         </div>
       </div>
 
-      <div class="users">
-        <img src="images/illustration-your-users.svg" alt="" aria-hidden="true" class="users-img">
-        <div class="users-content">
-          <h3 class="users-title">Your Users</h3>
-          <p class="users-description">
-            It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
-          </p>
+      <div class="waves-two">
+        <div class="top-wave-img">
+          <img src="images/bg-section-top-mobile-2.svg" alt="" aria-hidden="true">
+        </div>
+
+        <div class="users">
+          <img src="images/illustration-your-users.svg" alt="" aria-hidden="true" class="users-img">
+          <div class="users-content">
+            <h3 class="users-title">Your Users</h3>
+            <p class="users-description">
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+            </p>
+          </div>
+        </div>
+
+        <div class="bot-wave-img">
+          <img src="images/bg-section-bottom-mobile-2.svg" alt="" aria-hidden="true">
         </div>
       </div>
-    </section>
 
-    <h3>Ready To Build Your Community?</h3>
-    <a href="#">Get Started For Free</a>
-    <h4>Newsletter</h4>
-    <p>
-      To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
-    </p>
-    <form action="#">
-      <label for="typeEmail" hidden>Email:</label>
-      <input 
-      type="email" 
-      id="typeEmail" 
-      placeholder="Enter your email..."
-      pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]+"
-      required>
-      <p>
-        Please check your email
+      <!-- ==========Get started========== -->
+      <div class="ready-to-build">
+        <h3 class="ready-title">Ready To Build Your Community?</h3>
+        <a href="#" class="ready-button">Get Started For Free</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ==========Footer========== -->
+  <footer class="footer-container">
+    <img src="images/bg-footer-top-mobile.svg" alt="" aria-hidden="true" class="footer-wave">
+    <div class="newsletter">
+      <h4 class="newsletter-title">Newsletter</h4>
+      <p class="newsletter-description">
+        To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address
       </p>
-      <button type="submit">
-        Subscribe
-      </button>
-    </form>
+      <form action="#" class="footer-newsletter-form">
+        <label for="typeEmail" hidden>Email:</label>
+        <input 
+        type="email" 
+        id="typeEmail"
+        pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]+"
+        required>
+        <p class="error-message">
+          Please check your email
+        </p>
+        <button type="submit" class="send-email">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
     <img src="images/logo.svg" alt="" aria-hidden="true">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
@@ -136,7 +157,7 @@
     <img src="images/square-facebook.svg" alt="" aria-hidden="true">
     <img src="images/instagram.svg" alt="" aria-hidden="true">
     <img src="images/square-twitter.svg" alt="" aria-hidden="true">
-  </main>
+  </footer>
 
 </body>
 </html>

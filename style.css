@@ -114,11 +114,6 @@ body {
     padding: 3.5rem 1rem;
 }
 
-/* ==========Main========== */
-.main-containter {
-  
-}
-
 /* ==========Statistic section========== */
 .statistic {
   text-align: center;
@@ -155,20 +150,20 @@ body {
 /* ==========Utility section========== */
 .utility {
   display: grid;
-  gap: 10rem;
+  gap: 3rem;
 }
 
 /* ==========Grow together========== */
 .grow {
   background-color: var(--neutral-very-pale-blue);
-  padding: 4.5rem 2.5rem;
+  padding: 4.5rem 1.75rem;
   display: grid;
   gap: 5rem;
   text-align: center;
 }
 
 .grow-img {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .grow-content {
@@ -185,6 +180,178 @@ body {
 .grow-description {
   font-weight: var(--fw-ss-semibold);
   color: var(--neutral-very-dark-cyan);
-  font-size: 0.825rem;
+  font-size: 0.835rem;
 }
 
+/* ==========Flowing conversations========== */
+.flowing {
+  padding: 5rem 1.75rem 3rem 1.75rem;
+  text-align: center;
+  display: grid;
+  gap: 7rem;
+}
+
+.flowing-img {
+  padding: 0 2rem;
+}
+
+.flowing-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.flowing-title {
+  font-family: var(--ff-poppins);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.25rem;
+}
+
+.flowing-description {
+  font-weight: var(--fw-ss-semibold);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 0.835rem;
+}
+
+/* ==========Your users========== */
+.users {
+  background-color: var(--neutral-very-pale-blue);
+  padding: 2rem 1.75rem 5rem 1.75rem;
+  text-align: center;
+  display: grid;
+  gap: 6rem;
+}
+
+.users-img {
+  padding: 0 2rem;
+}
+
+.users-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.users-title {
+  font-family: var(--ff-poppins);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.25rem;
+}
+
+.users-description {
+  font-weight: var(--fw-ss-semibold);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 0.835rem;
+}
+
+/* ==========Get started========== */
+.ready-to-build {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  text-align: center;
+  padding: 4rem 1.75rem 15rem 1.75rem;
+}
+
+.ready-title {
+  font-family: var(--ff-poppins);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.5rem;
+}
+
+.ready-button {
+  background-color: var(--primary-pink);
+  color: white;
+  text-decoration: none;
+  font-weight: var(--fw-ss-semibold);
+  font-size: 0.75rem;
+  padding: 0.7rem 2.5rem;
+  width: max-content;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 5px -2px black;
+}
+
+/* ==========Footer========== */
+
+/* ==========Newsletter========== */
+.newsletter {
+  padding: 5rem 2rem;
+  background-color: var(--neutral-very-dark-cyan);
+  color: white;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.newsletter-title {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.newsletter-description {
+  font-family: var(--ff-sansserif);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ==========Email form========== */
+
+.footer-newsletter-form {
+  padding: 0.75rem;
+  display: grid;
+  grid-template-areas: 
+  "email email"
+  "error button";
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+#typeEmail {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  font-size: 0.75rem;
+  grid-area: email;
+}
+
+#typeEmail::placeholder {
+  color: var(--neutral-par-clr);
+}
+
+#typeEmail:invalid:focus:not(:placeholder-shown) + .error-message {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+#typeEmail:invalid:focus:not(:placeholder-shown) {
+  border: 1px solid red;
+  outline-color: red;
+}
+
+#typeEmail:valid {
+  border: 1px solid green;
+  outline-color: green;
+}
+
+.error-message {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s ease, opacity 0.5s ease;
+  color: red;
+  text-align: left;
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+  grid-area: error;
+}
+
+.send-email {
+  background-color: var(--primary-pink);
+  border: none;
+  color: white;
+  font-weight: var(--fw-ss-semibold);
+  padding: 0.8rem 0;
+  border-radius: 0.25rem;
+  font-size: 0.95rem;
+  box-shadow: 0px 5px 15px -10px black;
+  grid-area: button;
+}
