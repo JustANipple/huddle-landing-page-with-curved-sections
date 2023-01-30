@@ -132,7 +132,6 @@ body {
 .message {
   display: grid;
   gap: 0.2rem;
-  width: max-content;
 }
 
 .community-img,
@@ -150,5 +149,42 @@ body {
 .message-description {
   color: var(--neutral-light-gray);
   font-size: 0.9rem;
+}
+
+
+/* ==========Utility section========== */
+.utility {
+  display: grid;
+  gap: 10rem;
+}
+
+/* ==========Grow together========== */
+.grow {
+  background-color: var(--neutral-very-pale-blue);
+  padding: 4.5rem 2.5rem;
+  display: grid;
+  gap: 5rem;
+  text-align: center;
+}
+
+.grow-img {
+  padding: 0 1rem;
+}
+
+.grow-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.grow-title {
+  font-family: var(--ff-poppins);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 1.25rem;
+}
+
+.grow-description {
+  font-weight: var(--fw-ss-semibold);
+  color: var(--neutral-very-dark-cyan);
+  font-size: 0.825rem;
 }
 
