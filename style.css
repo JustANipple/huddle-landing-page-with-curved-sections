@@ -248,7 +248,7 @@ body {
   gap: 2rem;
   place-items: center;
   text-align: center;
-  padding: 4rem 1.75rem 15rem 1.75rem;
+  padding: 4rem 1.75rem 17rem 1.75rem;
 }
 
 .ready-title {
@@ -273,11 +273,11 @@ body {
 
 /* ==========Newsletter========== */
 .newsletter {
-  padding: 4rem 2rem 7rem 2rem;
+  padding: 3rem 2rem 7rem 2rem;
   background-color: var(--neutral-very-dark-cyan);
   color: white;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .newsletter-title {
@@ -288,7 +288,7 @@ body {
 .newsletter-description {
   font-family: var(--ff-sansserif);
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 /* ==========Email form========== */
