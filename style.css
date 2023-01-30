@@ -273,7 +273,7 @@ body {
 
 /* ==========Newsletter========== */
 .newsletter {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem 7rem 2rem;
   background-color: var(--neutral-very-dark-cyan);
   color: white;
   display: grid;
@@ -294,7 +294,7 @@ body {
 /* ==========Email form========== */
 
 .footer-newsletter-form {
-  padding: 0.75rem;
+  padding: 0.75rem 0;
   display: grid;
   grid-template-areas: 
   "email email"
@@ -354,4 +354,53 @@ body {
   font-size: 0.95rem;
   box-shadow: 0px 5px 15px -10px black;
   grid-area: button;
+}
+
+/* ==========More========== */
+.more {
+  background-color: var(--neutral-very-dark-cyan);
+  color: white;
+  padding: 0 2rem;
+}
+
+.more-logo {
+  filter: brightness(0) invert(1);
+  max-width: 12.5rem;
+}
+
+.more-description {
+  padding: 1rem 0 3rem 0;
+  font-size: 0.9rem;
+  font-weight: var(--fw-ss-semibold);
+  line-height: 1.8;
+}
+
+.more-list {
+  list-style: none;
+  padding: 0 1.75rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.more-list li:nth-child(1) {
+  list-style-image: url(images/icon-phone.svg);
+}
+
+.more-list li:nth-child(2) {
+  list-style-image: url(images/icon-email.svg);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+}
+
+.social i {
+  font-size: 1.5rem;
 }
