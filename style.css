@@ -498,6 +498,11 @@ body {
     gap: 0.5rem;
   }
 
+  /* ==========Utility section========== */
+  .utility {
+    gap: 6rem;
+  }
+
   /* ==========Grow together========== */
   .grow {
     padding: 4rem 8rem;
