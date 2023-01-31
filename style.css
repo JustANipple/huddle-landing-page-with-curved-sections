@@ -153,6 +153,12 @@ body {
   gap: 3rem;
 }
 
+.top-wave-img img,
+.bot-wave-img img,
+.footer-wave img {
+  width: 100%;
+}
+
 /* ==========Grow together========== */
 .grow {
   background-color: var(--neutral-very-pale-blue);
@@ -424,7 +430,7 @@ body {
 
 
 /* ==========Desktop design========== */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
   /* ==========Navigation bar========== */
   .nav-bar {
