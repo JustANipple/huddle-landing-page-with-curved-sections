@@ -153,11 +153,6 @@ body {
   gap: 3rem;
 }
 
-.top-wave-img,
-.bot-wave-img {
-  filter: brightness(0.5);
-}
-
 /* ==========Grow together========== */
 .grow {
   background-color: var(--neutral-very-pale-blue);
@@ -409,6 +404,24 @@ body {
   font-size: 1.5rem;
 }
 
+/* ==========Active states========== */
+.try-it:hover {
+  filter: brightness(1.5);
+  transition: filter 0.5s ease;
+}
+
+.header-button:hover,
+.ready-button:hover,
+.send-email:hover {
+  background-color: hsl(322, 100%, 78%);
+  transition: background-color 0.5s ease;
+}
+
+.social a:hover {
+  color: hsl(191, 79%, 46%);
+  transition: color 0.5s ease;
+}
+
 
 /* ==========Desktop design========== */
 @media screen and (min-width: 1440px) {
@@ -572,7 +585,8 @@ body {
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "wave wave"
+    grid-template-areas: 
+    "wave wave"
     "info newsletter";
     gap: 8rem;
     column-gap: 10rem;
@@ -588,10 +602,50 @@ body {
     grid-area: newsletter;
     padding: 0 8rem 0 0;
     gap: 1rem;
+    height: max-content;
   }
 
-/* ==========More========== */
-.more {
-  padding: 0 0 0 8rem;
-}
+  .newsletter-title {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-description {
+    padding-right: 10rem;
+  }
+
+  /* ==========Email form========== */
+  .footer-newsletter-form {
+    padding: 0.75rem 0;
+    grid-template-areas: 
+    "email button"
+    "error none";
+    grid-template-columns: 2.25fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 0;
+  }
+
+  /* ==========More========== */
+  .more {
+    padding: 0 0 0 8rem;
+  }
+
+  .more-logo {
+    max-width: 15rem;
+  }
+
+  .more-description {
+    padding: 2rem 10rem 2rem 0;
+    font-size: 0.9rem;
+    font-weight: var(--fw-ss-semibold);
+    line-height: 1.8;
+  }
+
+  .social {
+    gap: 1.5rem;
+  }
+
+  .social i {
+    font-size: 2.25rem;
+    padding: 1rem 0 3.5rem 0;
+  }
 }
