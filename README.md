@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/JustANipple/huddle-landing-page-with-curved-sections/blob/master/style.css)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://justanipple.github.io/huddle-landing-page-with-curved-sections/)
 
 ## My process
 
