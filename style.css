@@ -153,6 +153,11 @@ body {
   gap: 3rem;
 }
 
+.top-wave-img,
+.bot-wave-img {
+  filter: brightness(0.5);
+}
+
 /* ==========Grow together========== */
 .grow {
   background-color: var(--neutral-very-pale-blue);
@@ -449,6 +454,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20rem;
+    padding-bottom: 4rem;
   }
 
   .community-img,
@@ -474,4 +480,87 @@ body {
   }
 
   /* ==========Grow together========== */
+  .grow {
+    padding: 4rem 8rem;
+    grid-template-columns: 0.9fr 1fr;
+    grid-template-areas: "content image";
+    gap: 6rem;
+    text-align: unset;
+  }
+
+  .grow-img {
+    grid-area: image;
+  }
+
+  .grow-content {
+    grid-area: content;
+    margin: auto 0;
+    gap: 1.5rem;
+  }
+
+  .grow-title {
+    font-size: 2.5rem;
+  }
+
+  .grow-description {
+    font-size: 1rem;
+  }
+
+  /* ==========Flowing conversations========== */
+  .flowing {
+    padding: 5rem 7rem 3rem 7rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: unset;
+    gap: 9rem;
+  }
+  
+  .flowing-content {
+    margin: auto 0;
+    gap: 1.5rem;
+  }
+  
+  .flowing-title {
+    font-size: 2.5rem;
+  }
+  
+  .flowing-description {
+    font-size: 1rem;
+  }
+
+  /* ==========Your users========== */
+  .users {
+    padding: 2rem 8rem 5rem 8rem;
+    text-align: unset;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "content image";
+    gap: 5rem;
+  }
+  
+  .users-img {
+    grid-area: image;
+  }
+  
+  .users-content {
+    margin: auto 0;
+    grid-area: content;
+  }
+  
+  .users-title {
+    font-size: 2.5rem;
+  }
+  
+  .users-description {
+    font-size: 1rem;
+  }
+
+  /* ==========Get started========== */
+  .ready-title {
+    font-size: 2.5rem;
+  }
+
+  .ready-button {
+    font-size: 1.25rem;
+    padding: 1.5rem 6rem;
+    border-radius: 3rem;
+  }
 }
