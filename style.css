@@ -554,6 +554,10 @@ body {
   }
 
   /* ==========Get started========== */
+  .ready-to-build {
+    padding-bottom: 12rem;
+  }
+
   .ready-title {
     font-size: 2.5rem;
   }
@@ -563,4 +567,31 @@ body {
     padding: 1.5rem 6rem;
     border-radius: 3rem;
   }
+
+  /* ==========Footer========== */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "wave wave"
+    "info newsletter";
+    gap: 8rem;
+    column-gap: 10rem;
+    background-color: var(--neutral-very-dark-cyan);
+  }
+
+  .footer-wave {
+    background-color: white;
+    grid-area: wave;
+  }
+
+  .newsletter {
+    grid-area: newsletter;
+    padding: 0 8rem 0 0;
+    gap: 1rem;
+  }
+
+/* ==========More========== */
+.more {
+  padding: 0 0 0 8rem;
+}
 }

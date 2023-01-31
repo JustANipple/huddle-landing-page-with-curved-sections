@@ -153,7 +153,15 @@
 
   <!-- ==========Footer========== -->
   <footer class="footer-container">
-    <img src="images/bg-footer-top-mobile.svg" alt="" aria-hidden="true" class="footer-wave">
+    <picture class="footer-wave">
+      <source 
+      media="(max-width: 375px)"
+      srcset="images/bg-footer-top-mobile.svg">
+      <source 
+      media="(min-width: 376px)"
+      srcset="images/bg-footer-top-desktop.svg">
+      <img src="images/bg-footer-top-mobile.svg" alt="" aria-hidden="true">
+    </picture>
     <div class="newsletter">
       <h4 class="newsletter-title">Newsletter</h4>
       <p class="newsletter-description">
