@@ -67,6 +67,7 @@ This is a part of the first waves:
 ### Continued development
 
 Structuring this page with all the waves made hard organizing spaces. I realized later that i could've used a wave for every section to make them the same height, making it easier to gap them using grids
+I'll work harder on these projects to train my eyes to see these patterns
 
 ### Useful resources
 
