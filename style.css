@@ -309,6 +309,10 @@ body {
   align-items: center;
 }
 
+.email-label {
+  position: absolute;
+}
+
 #typeEmail {
   border: none;
   border-radius: 0.5rem;
